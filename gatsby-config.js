@@ -4,7 +4,7 @@ module.exports = {
   },
   siteMetadata: {
     title: "consoleclear",
-    siteUrl: "www.consoleclear.com",
+    siteUrl: "https://www.consoleclear.com",
   },
   plugins: [
     "gatsby-plugin-styled-components",
