@@ -7,6 +7,8 @@ module.exports = {
     siteUrl: "https://www.consoleclear.com",
   },
   plugins: [
+
+    "gatsby-plugin-layout",
     "gatsby-plugin-styled-components",
     "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
