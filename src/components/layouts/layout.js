@@ -25,11 +25,14 @@ const Wrapper = styled.div`
     #c25d8c 48.43%,
     #ecb684 125.46%
   );
+  width: 100%;
 `;
 
 const ContentWrapper = styled.div`
   max-width: 1234px;
-  padding: 50px 30px;
+  padding: 50px 20px;
   margin: 0 auto;
-  height: 100vh;
+  height: 100%;
+  z-index: 999;
+  position: relative;
 `;
