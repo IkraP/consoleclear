@@ -1,6 +1,8 @@
 import * as React from "react";
 import styled from "styled-components";
 import { RiTwitterFill, RiInstagramFill } from "react-icons/ri";
+import "@fontsource/shadows-into-light";
+import "@fontsource/arima-madurai";
 
 export default function Footer() {
   return (
@@ -61,8 +63,14 @@ const FooterItems = styled.div`
 
 const TextWrapper = styled.p`
   color: white;
+  font-family: Arima Madurai;
+  color: #32345e;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+
   a {
     color: white;
+    font-weight: 100;
     text-decoration: none;
   }
 `;
