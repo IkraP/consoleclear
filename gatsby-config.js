@@ -5,10 +5,8 @@ module.exports = {
   siteMetadata: {
     title: "consoleclear",
     siteUrl: "https://www.consoleclear.com",
-
     description: `A mental health application that aims to reduce anxiety through meditation, breaks and links for help`,
     author: `IkraP`,
-    siteUrl,
     lang: `en`,
     image: "https://www.chemtocode.co.uk/uploads/socialCard.png",
     favicon: {
