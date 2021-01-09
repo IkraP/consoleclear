@@ -27,7 +27,6 @@
     "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-plugin-sharp": "^2.11.2",
     "gatsby-plugin-styled-components": "^3.7.0",
-    "gatsby-source-filesystem": "^2.8.1",
     "gatsby-transformer-sharp": "^2.9.0",
     "gsap": "^3.5.1",
     "react": "^16.13.1",
