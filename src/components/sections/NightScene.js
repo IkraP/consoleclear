@@ -1,14 +1,11 @@
 import React from "react";
-import Header from "./Header";
-import Footer from "./Footer";
 
 export default function Nightscene() {
   return (
     <>
-      <div style={{ marginTop: "-130px" }}>
+      <div style={{ marginTop: "-175px" }}>
         <svg
           width="100%"
-          
           viewBox="0 0 1366 900"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
