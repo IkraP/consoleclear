@@ -115,10 +115,6 @@ body {
   font-size: 16px;
 }
 
-html {
-  border: 1px solid red;
-}
-
 ol,
 ul {
   list-style: none;
