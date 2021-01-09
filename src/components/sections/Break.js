@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
+import styled from "styled-components";
+import "@fontsource/arima-madurai";
 
 export default function Break() {
-  const [minutes, setMinutes] = useState("00");
+  const [minutes, setMinutes] = useState("10");
   const [seconds, setSeconds] = useState("00");
 
   let interval = useRef(null);
@@ -9,7 +11,6 @@ export default function Break() {
   const startTimer = () => {
     // clear interval
     clearInterval(interval);
-
     // set time for 10 minutes from new Date()
     const now = new Date();
     const endTime = now.setMinutes(now.getMinutes() + 10);
@@ -51,15 +52,45 @@ export default function Break() {
 
   return (
     <>
-      <h1>Take a 10 minute break</h1>
-      <p>
-        In the current chaos, when have you taken a break to think nothing. Take
-        a well earned break and relax your mind. Listen to the sounds and let go
-        of all of your thoughts.
-      </p>
-      <p>
-        {minutes} : {seconds}
-      </p>
+      <Wrapper>
+        <Text>
+          In our world, our lives are constantly in motion that we often neglect
+          a simple 10-minute break.{" "}
+        </Text>
+        <Text>
+          We think you deserve a break so during these 10 minutes let you mind
+          relax, focus on your breathing and let your mind wander!
+        </Text>
+
+        <Timer>
+          {minutes} : {seconds}
+        </Timer>
+      </Wrapper>
     </>
   );
 }
+
+const Wrapper = styled.div`
+  position: absolute;
+  top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+`;
+
+const Text = styled.h1`
+  font-family: Arima Madurai;
+  text-align: center;
+  font-size: 1.15em;
+  color: #12133c;
+`;
+
+const Timer = styled.div`
+  text-align: center;
+  padding: 20px;
+  font-family: Arima Madurai;
+  font-size: 4em;
+  color: pink;
+`;
