@@ -22,7 +22,7 @@ export default function Header() {
           {navigationButtons.map((navLink) => {
             return (
               <Link to={navLink.link}>
-                <MenuItem>{navLink.title}</MenuItem>
+                <MenuItem key={navLink.title}>{navLink.title}</MenuItem>
               </Link>
             );
           })}
