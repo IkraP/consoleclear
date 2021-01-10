@@ -73,4 +73,8 @@ const TextWrapper = styled.p`
     font-weight: 100;
     text-decoration: none;
   }
+
+  @media (max-width: 500px) {
+    font-size: 0.8em;
+  }
 `;

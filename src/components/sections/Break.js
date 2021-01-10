@@ -85,6 +85,11 @@ const Text = styled.h1`
   text-align: center;
   font-size: 1.15em;
   color: #12133c;
+  @media (max-width: 500px) {
+    font-size: 1em;
+    width: 80%;
+    margin: 0 auto;
+  }
 `;
 
 const Timer = styled.div`
