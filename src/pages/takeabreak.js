@@ -1,11 +1,14 @@
 import * as React from "react";
 import { Layout } from "../components/layouts/layout";
 import Break from "../components/sections/Break";
-import BreakScene from "../components/sections/BreakScene";
+import BreakSceneDesktop from "../components/sections/BreakSceneDesktop";
+import BreakSceneMobile from "../components/sections/BreakSceneMobile";
 import Seo from "../components/sections/Seo";
 import PageTransition from "gatsby-plugin-page-transitions";
+import { useBreakpoint } from "gatsby-plugin-breakpoints";
 
 export default function TakeABreak({ location }) {
+  const breakpoints = useBreakpoint();
   return (
     <>
       <PageTransition
@@ -23,7 +26,7 @@ export default function TakeABreak({ location }) {
         <Seo title="ConsoleClear | Break" pathname={location.pathname} />
         <Layout>
           <Break />
-          <BreakScene />
+          {breakpoints.md ? <BreakSceneMobile /> : <BreakSceneDesktop />}
         </Layout>
       </PageTransition>
     </>

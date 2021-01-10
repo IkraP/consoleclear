@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
-import Nightscene from "../components/sections/NightScene";
+import Nightscene from "../components/sections/NightSceneDesktop";
 import { Layout } from "../components/layouts/layout";
 import "@fontsource/arima-madurai";
 import Seo from "../components/sections/Seo";

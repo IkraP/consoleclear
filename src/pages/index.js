@@ -1,10 +1,13 @@
 import * as React from "react";
 import { Layout } from "../components/layouts/layout";
-import Nightscene from "../components/sections/NightScene";
+import NightSceneDesktop from "../components/sections/NightSceneDesktop";
+import NightSceneMobile from "../components/sections/NightSceneMobile";
 import Seo from "../components/sections/Seo";
 import PageTransition from "gatsby-plugin-page-transitions";
+import { useBreakpoint } from "gatsby-plugin-breakpoints";
 
 export default function IndexPage({ location }) {
+  const breakpoints = useBreakpoint();
   return (
     <>
       <PageTransition
@@ -21,7 +24,7 @@ export default function IndexPage({ location }) {
       >
         <Seo title="ConsoleClear | Home" pathname={location.pathname} />
         <Layout>
-          <Nightscene />
+          {breakpoints.md ? <NightSceneMobile /> : <NightSceneDesktop />}
         </Layout>
       </PageTransition>
     </>
