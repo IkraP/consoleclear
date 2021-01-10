@@ -6,7 +6,7 @@
 </h1>
 
 <h2 align="center">
-  <i>Console.clear is a project by me, <a href="http://www.twitter.com/chemtocode">ChemToCode</a> for the <a href="https://www.dev.to">Dev.to</a> DigitalOcean App Platform Hackathon in the category: Program for the People!</i>
+  <i>Console.clear is a project for the <a href="https://www.dev.to">Dev.to</a> DigitalOcean App Platform Hackathon in the category: Program for the People!</i>
 </h2>
 
 <h3 align="center" >
