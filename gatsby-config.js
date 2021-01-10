@@ -8,7 +8,7 @@ module.exports = {
     description: `A mental health application that aims to reduce anxiety through meditation, breaks and links for help`,
     author: `IkraP`,
     lang: `en`,
-    image: "https://www.chemtocode.co.uk/uploads/socialCard.png",
+    image: "/static/images/Screenshot_2021-01-10 Screenshot.png",
     favicon: {
       ico: "/uploads/favicon.ico",
       sm: "/uploads/favicon-16x16.png",
