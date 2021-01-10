@@ -5,6 +5,7 @@ import NightSceneMobile from "../components/sections/NightSceneMobile";
 import Seo from "../components/sections/Seo";
 import PageTransition from "gatsby-plugin-page-transitions";
 import { useBreakpoint } from "gatsby-plugin-breakpoints";
+import SocialCard from "../../static/images/socialCard.png";
 
 export default function IndexPage({ location }) {
   const breakpoints = useBreakpoint();
@@ -22,7 +23,11 @@ export default function IndexPage({ location }) {
         }}
         transitionTime={200}
       >
-        <Seo title="ConsoleClear | Home" pathname={location.pathname} />
+        <Seo
+          title="ConsoleClear | Home"
+          pathname={location.pathname}
+          image={SocialCard}
+        />
         <Layout>
           {breakpoints.md ? <NightSceneMobile /> : <NightSceneDesktop />}
         </Layout>
