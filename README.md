@@ -1,48 +1,48 @@
 <p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
+    <img alt="Gatsby" src="static/images/favicon.ico" width="60" />
 </p>
-<h1 align="center">
-  Gatsby minimal starter
+<h1 align="center" >
+  <i><u>Console.clear</u></i>
 </h1>
 
-## 🚀 Quick start
+<h2 align="center">
+  <i>Console.clear is a project by me, <a href="http://www.twitter.com/chemtocode">ChemToCode</a> for the <a href="https://www.dev.to">Dev.to</a> DigitalOcean App Platform Hackathon in the category: Program for the People!</i>
+</h2>
 
-1.  **Create a Gatsby site.**
+<h3 align="center" >
+  <i><u>Desktop Version</u></i>
+</h3>
+<div align="center"><img width="50%" src ="static/images/socialCard.png" alt="image of consoleclear site" />
+<img src ="static/images/breakScene.png"width="50%" alt="image of consoleclear timer page"/></div>
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+<h3 align="center" >
+  <i><u>Mobile Version</u></i>
+</h3>
+<div align="center"><img src ="static/images/mobilescene.png" alt="image of consoleclear site" /></div>
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+<h2>
+  <i><u>About Project: </u></i>
+</h2>
 
-2.  **Start developing.**
+<h3>The project idea has been brewing for a while as I really wanted to do create an app around mental health, knowing it would help others but most importantly, it was something that I could benefit from as well. The idea for console.clear came from browsing MDN one day and coming across it and it was only recently official! There were many ideas for this project but because of the deadline (and the fact I started coding properly three days ago! The current app has a 10-minute break timer for anyone to access and take a break from the chaos of the world!</h3>
 
-    Navigate into your new site’s directory and start it up.
+<h2>
+  <i><u>Tech Used: </u></i>
+</h2>
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+- <p>Gatsbyjs</p>
+- <p>React Hooks</p>
+- <p>Styled Components</p>
+- <p>GSAP for animations</p>
+- <p>Affinity Designer</p>
+- <p>Figma</p>
 
-3.  **Open the code and start customizing!**
+<h2>
+  <i><u>License: </u></i>
+</h2>
 
-    Your site is now running at http://localhost:8000!
+<p>Apache 2.0 with Commons Clause</p>
 
-    Edit `src/pages/index.js` to see your site update in real-time!
-
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+<h2>
+  <i><u>Author: IkraP </u></i>
+</h2>
