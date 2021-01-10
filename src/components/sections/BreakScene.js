@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { TimelineMax, Linear } from "gsap";
 import { TweenMax, Power0 } from "gsap/gsap-core";
-
+import { gsap } from "gsap";
 gsap.registerPlugin(TimelineMax, TweenMax);
 
 export default function BreakScene() {

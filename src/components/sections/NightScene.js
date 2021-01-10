@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { gsap } from "gsap";
 import { TimelineMax, Linear } from "gsap";
 import { TweenMax, Power0 } from "gsap/gsap-core";
 gsap.registerPlugin(TimelineMax, TweenMax);
