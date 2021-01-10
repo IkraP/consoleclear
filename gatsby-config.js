@@ -26,6 +26,7 @@ module.exports = {
   plugins: [
     "gatsby-plugin-styled-components",
     "gatsby-plugin-sharp",
+    "gatsby-plugin-breakpoints",
     "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-plugin-page-transitions",
