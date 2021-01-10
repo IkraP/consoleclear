@@ -4,10 +4,12 @@ import styled from "styled-components";
 import Nightscene from "../components/sections/NightScene";
 import { Layout } from "../components/layouts/layout";
 import "@fontsource/arima-madurai";
+import Seo from "../components/sections/Seo";
 
-export default function NotFoundPage() {
+export default function NotFoundPage({ location }) {
   return (
     <>
+      <Seo title="ConsoleClear | 404" pathname={location.pathname} />
       <Wrapper>
         <Layout>
           <TextWrapper>

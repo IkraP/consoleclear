@@ -54,12 +54,12 @@ export default function Break() {
     <>
       <Wrapper>
         <Text>
-          In our world, our lives are constantly in motion that we often neglect
-          a simple 10-minute break.{" "}
+          Our lives are constantly in motion that we often neglect a simple
+          10-minute break.{" "}
         </Text>
         <Text>
-          We think you deserve a break so during these 10 minutes let you mind
-          relax, focus on your breathing and let your mind wander!
+          We think you deserve a break so during these 10 minutes: relax, focus
+          on your breathing and let your mind wander!
         </Text>
 
         <Timer>

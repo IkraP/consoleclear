@@ -13,7 +13,7 @@ export default function Footer() {
         </TextWrapper>
         <FooterItems>
           <a
-            href="https://twitter.com/console.clear"
+            href="https://twitter.com/consoleclear"
             target="_blank"
             rel="noreferrer"
           >

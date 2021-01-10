@@ -1,6 +1,65 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { TimelineMax, Linear } from "gsap";
+import { TweenMax, Power0 } from "gsap/gsap-core";
 
 export default function BreakScene() {
+  useEffect(() => {
+    const stars = new TimelineMax({ repeat: -1, repeatDelay: 1 });
+    stars.to("#allstars", 0.5, {
+      opacity: 1,
+      ease: Linear.easeOut,
+    });
+    stars.to(
+      "#allstars",
+      0.5,
+      {
+        opacity: 0.2,
+        ease: Linear.easeOut,
+      },
+      0.5
+    );
+    stars.to(
+      "#allstars",
+      0.5,
+      {
+        opacity: 1,
+        ease: Linear.easeOut,
+      },
+      1.0
+    );
+    const shooting = new TimelineMax({ repeat: -1, repeatDelay: 1 });
+    shooting.fromTo(
+      "#shooting-stars",
+      { opacity: 0 },
+      { opacity: 0.5, duration: 1 }
+    );
+
+    TweenMax.fromTo(
+      "#skylayer2",
+      2,
+      { x: 30 },
+      { x: 0, repeat: -1, yoyo: true, ease: Power0.easeNone }
+    );
+    TweenMax.fromTo(
+      "#skylayer",
+      2,
+      { x: -30 },
+      { x: 0, repeat: -1, yoyo: true, ease: Power0.easeNone }
+    );
+
+    TweenMax.fromTo(
+      "#moon",
+      5,
+      { scale: 0.9, transformOrigin: "center center" },
+      {
+        scale: 1,
+        repeat: -1,
+        yoyo: true,
+        ease: Power0.easeInOut,
+      }
+    );
+  }, []);
+
   return (
     <div style={{ marginTop: "-175px" }}>
       <svg
@@ -26,7 +85,7 @@ export default function BreakScene() {
             d="M1364.48 227.481C1339.02 135.807 1264.02 136.976 1201.98 177.013C1139.95 217.051 1124.14 229.582 1048.91 193.134C973.686 156.686 929.018 141.967 845.884 193.134C762.755 244.303 729.254 231.686 649.845 183.322C570.435 134.958 571.675 97.8082 469.932 177.013C368.192 256.219 381.839 249.915 291.262 200.146C200.686 150.378 187.039 158.789 129.964 193.134C72.8883 227.481 0.999964 227.481 0.999964 227.481V489.363H1364.48C1364.48 504.178 1372.41 256.039 1364.48 227.481Z"
             fill="url(#paint1_linear)"
           />
-          <g id="moon brigt">
+          <g id="moon">
             <g id="Group" filter="url(#filter0_f)">
               <path
                 id="Vector"
@@ -86,7 +145,7 @@ export default function BreakScene() {
             d="M1028.81 414.144C1018.29 425.453 1019.14 436.027 1020.88 439.9C1001.28 467.852 991.069 485.38 988.411 490.651C993.926 497.813 1017.9 502.889 1069.67 465.895C1134.38 419.653 1072.92 505.38 1141.47 471.223C1210.02 437.066 1205.63 446.769 1147.32 394.103C1089.02 341.437 1041.96 400.009 1028.81 414.144Z"
             fill="url(#paint8_linear)"
           />
-          <g id="all stars">
+          <g id="allstars">
             <path
               id="Vector_3"
               d="M165.121 164.963C156.246 164.963 159.081 149.801 159.081 149.801H158.218C158.218 149.801 161.115 164.963 152.178 164.963C161.054 164.963 158.218 180.124 158.218 180.124H159.081C159.081 180.124 156.184 164.963 165.121 164.963Z"

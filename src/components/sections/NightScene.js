@@ -1,6 +1,51 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { TimelineMax, Linear } from "gsap";
+import { TweenMax, Power0 } from "gsap/gsap-core";
 
 export default function Nightscene() {
+  useEffect(() => {
+    const tl = new TimelineMax({ repeat: -1, repeatDelay: 1 });
+    tl.to("#allstars", 0.5, {
+      opacity: 1,
+      ease: Linear.easeOut,
+    });
+    tl.to(
+      "#allstars",
+      0.5,
+      {
+        opacity: 0.2,
+        ease: Linear.easeOut,
+      },
+      0.5
+    );
+    tl.to(
+      "#allstars",
+      0.5,
+      {
+        opacity: 1,
+        ease: Linear.easeOut,
+      },
+      1.0
+    );
+
+    TweenMax.fromTo(
+      "#shooting-stars",
+      { opacity: 0 },
+      { opacity: 0.5, duration: 4, repeat: -1, yoyo: true }
+    );
+    TweenMax.fromTo(
+      "#skylayer2",
+      2,
+      { x: 30 },
+      { x: 0, repeat: -1, yoyo: true, ease: Power0.easeNone }
+    );
+    TweenMax.fromTo(
+      "#skylayer",
+      2,
+      { x: -30 },
+      { x: 0, repeat: -1, yoyo: true, ease: Power0.easeNone }
+    );
+  }, []);
   return (
     <>
       <div style={{ marginTop: "-175px" }}>
@@ -90,7 +135,7 @@ export default function Nightscene() {
                 fill="white"
               />
             </g>
-            <g id="all stars">
+            <g id="allstars">
               <path
                 id="Vector_3"
                 d="M165.121 164.963C156.246 164.963 159.081 149.801 159.081 149.801H158.218C158.218 149.801 161.115 164.963 152.178 164.963C161.054 164.963 158.218 180.124 158.218 180.124H159.081C159.081 180.124 156.184 164.963 165.121 164.963Z"
