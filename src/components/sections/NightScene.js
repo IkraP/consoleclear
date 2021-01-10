@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { TimelineMax, Linear } from "gsap";
 import { TweenMax, Power0 } from "gsap/gsap-core";
+gsap.registerPlugin(TimelineMax, TweenMax);
 
 export default function Nightscene() {
   useEffect(() => {

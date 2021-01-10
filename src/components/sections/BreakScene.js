@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { TimelineMax, Linear } from "gsap";
 import { TweenMax, Power0 } from "gsap/gsap-core";
 
+gsap.registerPlugin(TimelineMax, TweenMax);
+
 export default function BreakScene() {
   useEffect(() => {
     const stars = new TimelineMax({ repeat: -1, repeatDelay: 1 });
